@@ -2,7 +2,7 @@
 
 ![Banner](./github-banner.png)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Desenvolvedor+web+em+forma%C3%A7%C3%A3o;Construindo+uma+base+s%C3%B3lida+em+tecnologia;Um+commit+de+cada+vez)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Aspiring+web+developer;Building+strong+foundations+in+technology;Learning+one+commit+at+a+time)](https://git.io/typing-svg)
 
 </div>
 
@@ -10,13 +10,13 @@
 
 <div align="center">
 
-## Sobre mim
+## About Me
 
-Olá, eu sou **Gap**.
+Hi, I'm **Gap**.
 
-Sou um desenvolvedor web em formação, focado em fortalecer meus fundamentos e transformar aprendizado em soluções bem estruturadas. Valorizo código claro, evolução constante e boas práticas de desenvolvimento.
+I'm an aspiring web developer focused on strengthening my foundations and turning what I learn into well-structured solutions. I value clean code, continuous improvement, and thoughtful development practices.
 
-`Desenvolvimento Web` · `Aprendizado Contínuo` · `Boas Práticas`
+`Web Development` · `Continuous Learning` · `Clean Code`
 
 </div>
 
@@ -24,21 +24,21 @@ Sou um desenvolvedor web em formação, focado em fortalecer meus fundamentos e 
 
 <div align="center">
 
-## Tecnologias
+## Tech Stack
 
-### Base
+### Core Technologies
 
 ![HTML5](https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=E34F26)
 ![CSS3](https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css3&logoColor=1572B6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-### Back-end e dados
+### Backend & Data
 
 ![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E)
 ![Express](https://img.shields.io/badge/Express-0d1117?style=for-the-badge&logo=express&logoColor=ffffff)
 ![MySQL](https://img.shields.io/badge/MySQL-0d1117?style=for-the-badge&logo=mysql&logoColor=4479A1)
 
-### Ferramentas
+### Tools
 
 ![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
 ![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=ffffff)
@@ -50,26 +50,12 @@ Sou um desenvolvedor web em formação, focado em fortalecer meus fundamentos e 
 
 <div align="center">
 
-## Em evolução
+## Currently Learning
 
-Estou aprofundando meus conhecimentos no ecossistema JavaScript, no desenvolvimento de APIs e na construção de aplicações web completas.
+I'm currently deepening my knowledge of the JavaScript ecosystem, API development, and building complete web applications.
 
-![Focus](https://img.shields.io/badge/FOCO-DESENVOLVIMENTO_WEB-238636?style=flat-square)
-![Status](https://img.shields.io/badge/STATUS-APRENDENDO-58A6FF?style=flat-square)
-
-</div>
-
----
-
-<div align="center">
-
-## Estatísticas
-
-<img height="170" src="./assets/github-stats.svg" alt="Estatísticas do GitHub de Gap">
-
-<img width="495" src="./assets/contribution-streak.svg" alt="Sequência de contribuições de Gap">
-
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Gapxz&bg_color=0A0908&color=F2F4F3&line=49111C&point=F2F4F3&area=true&area_color=49111C&hide_border=true&custom_title=Gráfico%20de%20Contribuições" alt="Gráfico de contribuições de Gap">
+![Focus](https://img.shields.io/badge/FOCUS-WEB_DEVELOPMENT-49111C?style=flat-square)
+![Status](https://img.shields.io/badge/STATUS-LEARNING-49111C?style=flat-square)
 
 </div>
 
@@ -77,11 +63,25 @@ Estou aprofundando meus conhecimentos no ecossistema JavaScript, no desenvolvime
 
 <div align="center">
 
-## Contato
+## GitHub Stats
+
+<img height="170" src="./assets/github-stats.svg" alt="Gap's GitHub statistics">
+
+<img width="495" src="./assets/contribution-streak.svg" alt="Gap's contribution streak">
+
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Gapxz&bg_color=0A0908&color=F2F4F3&line=49111C&point=F2F4F3&area=true&area_color=49111C&hide_border=true&custom_title=Contribution%20Graph" alt="Gap's contribution graph">
+
+</div>
+
+---
+
+<div align="center">
+
+## Connect
 
 [![GitHub](https://img.shields.io/badge/GitHub-@Gapxz-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gapxz)
 
-<sub>Construindo o próximo capítulo com consistência, curiosidade e código.</sub>
+<sub>Building the next chapter with consistency, curiosity, and code.</sub>
 
 </div>
 
