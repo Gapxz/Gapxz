@@ -9,8 +9,8 @@ TOKEN = os.environ["GITHUB_TOKEN"]
 OUTPUT = Path("assets/contribution-streak.svg")
 
 MONTHS = [
-    "jan.", "fev.", "mar.", "abr.", "mai.", "jun.",
-    "jul.", "ago.", "set.", "out.", "nov.", "dez.",
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
 ]
 
 
@@ -32,19 +32,21 @@ def graphql(query, variables):
 
 
 def format_day(value):
-    return f"{value.day} de {MONTHS[value.month - 1]}"
+    return f"{MONTHS[value.month - 1]} {value.day}"
 
 
 def format_range(start, end, present=False):
     if present:
-        return f"{format_day(start)} de {start.year} - Presente"
+        return f"{format_day(start)}, {start.year} - Present"
     if not start or not end:
-        return "Sem sequência"
+        return "No streak"
+    if start == end:
+        return format_day(start)
     left = format_day(start)
     right = format_day(end)
     if start.year != end.year:
-        left += f" de {start.year}"
-        right += f" de {end.year}"
+        left += f", {start.year}"
+        right += f", {end.year}"
     return f"{left} - {right}"
 
 
@@ -132,10 +134,12 @@ current, current_start, current_end, longest, longest_start, longest_end = strea
 joined_range = format_range(created_at.date(), now.date(), present=True)
 current_range = format_range(current_start, current_end)
 longest_range = format_range(longest_start, longest_end)
+current_unit = "day" if current == 1 else "days"
+longest_unit = "day" if longest == 1 else "days"
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-labelledby="title desc">
-  <title id="title">Sequência de contribuições de Gap</title>
-  <desc id="desc">{total} contribuições, sequência atual de {current} dias e maior sequência de {longest} dias.</desc>
+  <title id="title">Gap's contribution streak</title>
+  <desc id="desc">{total} contributions, a current streak of {current} {current_unit}, and a longest streak of {longest} {longest_unit}.</desc>
   <style>
     text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: middle; }}
     .number {{ fill: #F2F4F3; font-size: 28px; font-weight: 700; }}
@@ -146,18 +150,18 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewB
   <path d="M165 28V167M330 28V167" stroke="#49111C" stroke-width="2"/>
 
   <text class="number" x="82.5" y="78">{total}</text>
-  <text class="label" x="82.5" y="116">Total de Contribuições</text>
+  <text class="label" x="82.5" y="116">Total Contributions</text>
   <text class="date" x="82.5" y="145">{joined_range.split(' - ')[0]}</text>
-  <text class="date" x="82.5" y="163">- Presente</text>
+  <text class="date" x="82.5" y="163">- Present</text>
 
   <circle cx="247.5" cy="70" r="40" fill="none" stroke="#49111C" stroke-width="6"/>
   <path d="M247.5 16c7 8 7 15 0 22-7-7-7-14 0-22Zm0 7c-2.5 4-2 7 0 9 2-2 2.5-5 0-9Z" fill="#49111C" fill-rule="evenodd"/>
   <text class="number" x="247.5" y="80">{current}</text>
-  <text class="label" x="247.5" y="135">Sequência Atual</text>
+  <text class="label" x="247.5" y="135">Current Streak</text>
   <text class="date" x="247.5" y="160">{current_range}</text>
 
   <text class="number" x="412.5" y="78">{longest}</text>
-  <text class="label" x="412.5" y="116">Maior Sequência</text>
+  <text class="label" x="412.5" y="116">Longest Streak</text>
   <text class="date" x="412.5" y="151">{longest_range}</text>
 </svg>
 '''
