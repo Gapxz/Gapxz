@@ -69,7 +69,7 @@ Estou aprofundando meus conhecimentos no ecossistema JavaScript, no desenvolvime
 
 <img src="https://streak-stats.demolab.com?user=Gapxz&theme=github-dark-blue&hide_border=true&locale=pt_BR" alt="Sequência de contribuições de Gap">
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Gapxz&bg_color=0d1117&color=58a6ff&line=238636&point=ffffff&area=true&hide_border=true&custom_title=Gráfico%20de%20Contribuições" alt="Gráfico de contribuições de Gap">
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Gapxz&bg_color=0A0908&color=F2F4F3&line=49111C&point=F2F4F3&area=true&area_color=49111C&hide_border=true&custom_title=Gráfico%20de%20Contribuições" alt="Gráfico de contribuições de Gap">
 
 </div>
 
