@@ -1,4 +1,4 @@
-name: Atualizar estatísticas do perfil
+name: Update profile statistics
 
 on:
   schedule:
@@ -21,25 +21,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Baixar o repositório
+      - name: Check out repository
         uses: actions/checkout@v6
 
-      - name: Gerar card de estatísticas
+      - name: Generate statistics card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: "username=Gapxz&show_icons=true&theme=github_dark&hide_border=true&locale=pt-br&rank_icon=github&title_color=F2F4F3&text_color=F2F4F3&icon_color=49111C&ring_color=49111C&bg_color=0A0908"
+          options: "username=Gapxz&show_icons=true&theme=github_dark&hide_border=true&locale=en&rank_icon=github&title_color=F2F4F3&text_color=F2F4F3&icon_color=49111C&ring_color=49111C&bg_color=0A0908"
           path: assets/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
-      - name: Gerar card de sequência
+      - name: Generate streak card
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: Gapxz
         run: python scripts/generate_streak.py
 
-      - name: Salvar cards atualizados
+      - name: Save updated cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
