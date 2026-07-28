@@ -121,7 +121,7 @@ while chunk_start <= now:
         for item in week["contributionDays"]:
             contribution_day = date.fromisoformat(item["date"])
             if created_at.date() <= contribution_day <= now.date():
-                counts[contribution_day] = item["contributionCount"]
+                counts[contribution_day] = max(counts.get(contribution_day, 0), item["contributionCount"])
     chunk_start = chunk_end + timedelta(seconds=1)
 
 total = sum(counts.values())
