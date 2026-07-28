@@ -67,7 +67,7 @@ Estou aprofundando meus conhecimentos no ecossistema JavaScript, no desenvolvime
 
 <img height="170" src="./assets/github-stats.svg" alt="Estatísticas do GitHub de Gap">
 
-<img src="https://streak-stats.demolab.com?user=Gapxz&hide_border=true&locale=pt_BR&background=0A0908&stroke=49111C&ring=49111C&fire=49111C&currStreakNum=F2F4F3&sideNums=F2F4F3&currStreakLabel=F2F4F3&sideLabels=F2F4F3&dates=F2F4F3" alt="Sequência de contribuições de Gap">
+<img width="495" src="./assets/contribution-streak.svg" alt="Sequência de contribuições de Gap">
 
 <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Gapxz&bg_color=0A0908&color=F2F4F3&line=49111C&point=F2F4F3&area=true&area_color=49111C&hide_border=true&custom_title=Gráfico%20de%20Contribuições" alt="Gráfico de contribuições de Gap">
 
