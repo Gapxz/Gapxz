@@ -85,4 +85,4 @@ Estou aprofundando meus conhecimentos no ecossistema JavaScript, no desenvolvime
 
 </div>
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0d1117,50:161b22,100:238636&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0A0908,50:49111C,100:0A0908&section=footer)
