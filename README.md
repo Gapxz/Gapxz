@@ -65,7 +65,7 @@ Estou aprofundando meus conhecimentos no ecossistema JavaScript, no desenvolvime
 
 ## Estatísticas
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Gapxz&show_icons=true&theme=github_dark&hide_border=true&locale=pt-br&rank_icon=github" alt="Estatísticas do GitHub de Gap">
+<img height="170" src="./assets/github-stats.svg" alt="Estatísticas do GitHub de Gap">
 
 <img src="https://streak-stats.demolab.com?user=Gapxz&theme=github-dark-blue&hide_border=true&locale=pt_BR" alt="Sequência de contribuições de Gap">
 
