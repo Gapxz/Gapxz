@@ -7,6 +7,54 @@ on:
   push:
     paths:
       - ".github/workflows/update-stats.yml"
+      - "scripts/generate_streak.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: true
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v6
+
+      - name: Gerar card de estatísticas
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: "username=Gapxz&show_icons=true&theme=github_dark&hide_border=true&locale=pt-br&rank_icon=github&title_color=F2F4F3&text_color=F2F4F3&icon_color=49111C&ring_color=49111C&bg_color=0A0908"
+          path: assets/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Gerar card de sequência
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: Gapxz
+        run: python scripts/generate_streak.py
+
+      - name: Salvar cards atualizados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-stats.svg assets/contribution-streak.svg
+          git diff --cached --quiet || git commit -m "Update profile stats"
+          git push
+name: Atualizar estatísticas do perfil
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/update-stats.yml"
 
 permissions:
   contents: write
